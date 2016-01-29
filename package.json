@@ -1,0 +1,26 @@
+{
+  "name": "ramda-extras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikfroberg/ramda-extras.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikfroberg/ramda-extras/issues"
+  },
+  "homepage": "https://github.com/vikfroberg/ramda-extras#readme",
+  "dependencies": {
+    "ramda": "^0.19.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+  }
+}
