@@ -22,10 +22,19 @@ export const trace =
   tap(console.log)
 
 export const targetValue =
-  (e) => e.target.value
+  path(['target', 'value'])
+
+export const invoke =
+  invoker(0)
 
 export const preventDefault =
-  (e) => {
-    e.preventDefault()
-    return e
-  }
+  tap(invoke('preventDefault'))
+
+export const otherwise =
+  T
+
+export const notFn =
+  compose(not, equals('Function'), type)
+
+export const guard =
+  conds => cond(map(map(when(notFn, always)), conds))
